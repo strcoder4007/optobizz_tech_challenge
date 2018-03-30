@@ -2,11 +2,10 @@
   text-align: center;
   background-color: #222;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 .App-header {
-  height: 100px;
+  min-height: 100px;
   padding-top: 20px;
   color: white;
 }
@@ -19,13 +18,29 @@
 }
 
 .optionsName {
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 
-.junk {
+.contacts {
     background-color: #333;
 }
+
+.favorites {
+}
+
+.entries {
+    color: whitesmoke;
+    border: 1px solid #333;
+}
+
+.floatingBtn {
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
