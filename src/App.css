@@ -15,6 +15,7 @@
     font-size: 1em;
     color: whitesmoke;
     border: 1px solid #333;
+    cursor: pointer;
 }
 
 .optionsName {
@@ -47,13 +48,22 @@
 ol > li {
     padding-top: 20px;
     height: 40px;
-    font-size: 1em;
-    font-family: monospace;
+    font-size: .9em;
+    font-family: "open sans";
+    width: 75vw;
+    text-align: left;
 }
 
 .favBtn {
-    height: 25px;
-    width: 25px;
+    text-align: right;
+    right: 15%;
+    position: fixed;
+    cursor: pointer;
+}
+.contactsSection {
+}
+
+.favoritesSection {
 }
 
 @keyframes App-logo-spin {
