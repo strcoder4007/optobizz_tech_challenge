@@ -56,8 +56,6 @@ ol > li {
 
 .favBtn {
     text-align: right;
-    right: 15%;
-    position: fixed;
     cursor: pointer;
 }
 .contactsSection {
