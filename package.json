@@ -2,6 +2,7 @@
   "name": "optobizz_tech_challenge",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://myapp.com/directory-name",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "jquery": "^3.3.1",
