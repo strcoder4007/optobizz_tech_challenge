@@ -40,7 +40,16 @@
     position: fixed;
     cursor: pointer;
 }
+.v {
+    list-style-type: none;
+}
 
+ol > li {
+    padding-top: 20px;
+    height: 40px;
+    font-size: 1em;
+    font-family: monospace;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
