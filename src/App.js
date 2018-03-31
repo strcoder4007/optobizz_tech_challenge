@@ -9,19 +9,23 @@ class App extends Component {
             contacts: [
                 {
                     name: "fake_user#1",
-                    favorite: false
+                    favorite: false,
+                    id: 0
                 },
                 {
                     name: "fake_user#2",
-                    favorite: true
+                    favorite: true,
+                    id: 1
                 },
                 {
                     name: "fake_user#3",
-                    favorite: false
+                    favorite: false,
+                    id: 2
                 },
                 {
                     name: "fake_user#4",
-                    favorite: true
+                    favorite: true,
+                    id: 3
                 }
             ],
             showContacts: true
@@ -60,16 +64,20 @@ class App extends Component {
         })
         junk.push({
             name: "new_user#"+cnt,
-            favorite: cnt%2 ? true : false
+            favorite: cnt%2 ? true : false,
+            id: cnt
         })
         this.setState({
             contacts: junk
         })
     }
 
+    addFavorite() {
+    }
+
     render() {
         var showContacts = this.state.showContacts;
-        var contacts = this.state.contacts.slice(0).reverse().map(contact => <li className="contactsSection">{contact.name}</li>);
+        var contacts = this.state.contacts.slice(0).reverse().map((contact, index) => <li className="contactsSection">{contact.name}<span className="pull-right" onClick={this.addFavorite.bind(this)}>add to fav</span></li>);
         var favorites = this.state.contacts.slice(0).reverse().map(contact => { if(contact.favorite) return <li className="favoritesSection">{contact.name}</li>});
         return (
             <div className="App">
