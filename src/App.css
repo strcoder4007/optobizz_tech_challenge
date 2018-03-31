@@ -64,6 +64,16 @@ ol > li {
 .favoritesSection {
 }
 
+.inputBox {
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: .9em;
+    font-family: "open sans";
+    color: whitesmoke;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
